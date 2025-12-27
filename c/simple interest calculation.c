@@ -4,7 +4,8 @@ int main() {
 
     
     float principle,rate,time,si;   
-    
+
+    printf("****Program to calculate simple interest****");
     printf("Enter principle :. ");  
     scanf("%f",&principle);
     
