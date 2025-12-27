@@ -5,7 +5,8 @@ int main() {                    //main function
     int n,i;                    //variables declaration
     int p = 0;                  //default values
     int np = 0;
-    
+
+    printf("To check the number is Prime or not\n");
     printf("Enter a number to check:. ");   //entering number
     scanf("%i",&n);
     
