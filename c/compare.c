@@ -1,16 +1,17 @@
-#include <stdio.h>  //header files
+#include <stdio.h>  
 
-int main() {                    //main function
+int main() {              
 
     int a , b;
-    
-    printf("Enter a number 1 :. ");   //entering first number
+
+    printf("****To compare 2 numbers****\n");
+    printf("Enter a number 1 :. ");   
     scanf("%i",&a);
     
-    printf("Enter a number 2 :. ");   //entering second number
+    printf("Enter a number 2 :. ");   
     scanf("%i",&b);
     
-    if (a==b) {     //check both number nested if
+    if (a==b) {     
         printf("Number %i is Equal to %i.",a,b);
     } else if(a>b) {
         printf("Number %i is Greater than %i",a,b);
