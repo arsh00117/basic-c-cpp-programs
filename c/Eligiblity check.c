@@ -1,13 +1,13 @@
-#include <stdio.h>  //header files
+#include <stdio.h> 
 
-int main() {                    //main function
+int main() {                    
 
     int age;
     
     printf("Program to check Person is eligible.\n");
     printf("****For a driving license****\n\n");
     
-    printf("Enter the age of person :. ");   //entering age
+    printf("Enter the age of person :. ");   
     scanf("%i",&age);
     
     if (age>=18) {

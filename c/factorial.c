@@ -1,6 +1,6 @@
-#include <stdio.h>  //header files
+#include <stdio.h>  
 
-int main() {                    //main function
+int main() {                  
 
     int n,i;
     int f=1;                   

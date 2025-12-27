@@ -1,19 +1,19 @@
-#include <stdio.h>              //header files
+#include <stdio.h>           
 
-int main() {                    //main function
+int main() {                   
 
-    int n,i;                    //variables declaration
-    int p = 0;                  //default values
+    int n,i;                    
+    int p = 0;                  
     int np = 0;
 
     printf("To check the number is Prime or not\n");
-    printf("Enter a number to check:. ");   //entering number
+    printf("Enter a number to check:. "); 
     scanf("%i",&n);
     
-    for(i=2;i<=n-1;i++) {      //loop starts to check its prime or not
+    for(i=2;i<=n-1;i++) {      
         if(n%i==0) {
             np = 1;
-            break;             // pauses if its not prime
+            break;             
         } else {
             p = 1;
         }
