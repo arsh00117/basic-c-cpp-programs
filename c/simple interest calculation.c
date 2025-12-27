@@ -1,20 +1,20 @@
-#include <stdio.h>  //header files
+#include <stdio.h> 
 
-int main() {                    //main function
+int main() {                  
 
     
-    float principle,rate,time,si;   //variables declaration
+    float principle,rate,time,si;   
     
-    printf("Enter principle :. ");  //entering principle
+    printf("Enter principle :. ");  
     scanf("%f",&principle);
     
-    printf("Enter Rate :. ");       //entering rate
+    printf("Enter Rate :. ");     
     scanf("%f",&rate);
     
-    printf("Enter time :. ");       //entering time in year
+    printf("Enter time :. ");     
     scanf("%f",&time);
     
-    si = (principle*rate*time)/100; //formula for calculation
+    si = (principle*rate*time)/100; 
   
     printf("***************\n");
     printf("TOTAL INTREST: %.2f\n",si);
