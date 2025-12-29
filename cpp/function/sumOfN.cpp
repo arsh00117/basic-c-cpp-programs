@@ -11,6 +11,7 @@ int sumOfN(int n) {
 
 int main() {
     int a;
+    
     cout<<"****To Calculate Sum of N****"<<endl;
     cout<<"Enter Number N : ";
     cin>>a;
