@@ -1,24 +1,24 @@
 #include <iostream>
 using namespace std;
 
-int facto(int n) {
-    int o = 1;
+long long facto(int n) {
+    long o = 1;
     for(int i = 1;i <= n;i++) {
         o=o*i;
     }
     return o;
 }
 
-int nCr(int n,int r) {
-    int factn = facto(n);
-    int factr = facto(r);
-    int factd = facto(n-r);
+long long nCr(int n,int r) {
+    long long factn = facto(n);
+    long long factr = facto(r);
+    long long factd = facto(n-r);
     
-    int t = factn/(factr*factd);
+    long long t = factn/(factr*factd);
     return t;
 }
 int main() {
-    int n,r;
+    long long n,r;
     
     
     cout<<"Calculate Binomonial Coefficients nCr"<<endl<<endl;
@@ -29,7 +29,7 @@ int main() {
     cout<<"Enter r: ";
     cin>>r;
     
-    int o = nCr(n,r);
+    long long o = nCr(n,r);
     
     cout<<n<<"C"<<r<<" is: "<<o<<"."<<endl;
     return 0;
