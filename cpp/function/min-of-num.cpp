@@ -19,7 +19,6 @@ int main() {
     cout<<"Enter Number 2: ";
     cin>>b;
 
-    int o =minOfTwo(a,b);
-    cout<<endl<<"Minimum is:  "<<o<<endl;
+    cout<<endl<<"Minimum is:  "<<minOfTwo(a,b)<<endl;
     return 0;
 }
