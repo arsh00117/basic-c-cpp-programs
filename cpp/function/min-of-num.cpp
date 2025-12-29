@@ -1,14 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int min(int a, int b) {
-    int o;
+int minOfTwo(int a, int b) {
     if(a>b) {
-        o = b;
+        return b;
     } else {
-        o = a;
+        return a;
     }
-    return o;
 }
 
 int main() {
@@ -21,7 +19,7 @@ int main() {
     cout<<"Enter Number 2: ";
     cin>>b;
 
-    int o =min(a,b);
+    int o =minOfTwo(a,b);
     cout<<endl<<"Minimum is:  "<<o<<endl;
     return 0;
 }
