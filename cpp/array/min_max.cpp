@@ -13,10 +13,9 @@ int main() {
     
     for(int i = 0;i<size;i++) {
         smallest = min(num[i],smallest);
-    }
-    for(int i = 0;i<size;i++) {
         largest = max(num[i],largest);
     }
+    
     cout<<"Smallest : "<<smallest<<endl;
     cout<<"Largest : "<<largest<<endl;
     return 0;
