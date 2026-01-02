@@ -15,8 +15,6 @@ int main() {
         if(num[i]<smallest) {
             smallest = num[i];
         }
-    }
-    for(int i = 0;i<size;i++) {
         if(num[i]>largest) {
             largest = num[i];
         }
