@@ -1,32 +1,32 @@
 #include <iostream>
 #include <vector>
-#include <climits>
 
 using namespace std;
 
-class Solution {
-public:
-    int maxSubArray(vector<int>& nums) {
-        int curSum = 0, maxSum = INT_MIN;
+vector<int> pairSum(const vector<int>& nums, int target) {
+    int n = nums.size();
 
-        for (int val : nums) {
-            curSum += val;
-            maxSum = max(curSum, maxSum);
-
-            if (curSum < 0) {
-                curSum = 0;
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (nums[i] + nums[j] == target) {
+                return {i, j};
             }
         }
-        return maxSum;
     }
-};
+    return {};
+}
 
 int main() {
-    vector<int> nums = {1, 5, 6, -3, -9, 7, -7};
+    vector<int> nums = {2, 7, 11, 15};
+    int target = 13;
 
-    Solution sol;                       
-    int result = sol.maxSubArray(nums); 
+    vector<int> ans = pairSum(nums, target);
 
-    cout << result << endl;
+    if (!ans.empty()) {
+        cout << nums[ans[0]] << ", " << nums[ans[1]] << endl;
+    } else {
+        cout << "No pair found" << endl;
+    }
+
     return 0;
 }
